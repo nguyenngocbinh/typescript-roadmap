@@ -49,7 +49,37 @@ git push
 ✅ **Bài tập thực hành** cuối mỗi tuần  
 ✅ **Tự động deployment** với GitHub Actions  
 ✅ **SEO-ready** với sitemap và meta tags  
-✅ **Mobile responsive** với Jekyll theme  
+✅ **Modern responsive design** cho mobile & desktop  
+✅ **Dark mode support** tự động theo system  
+✅ **Interactive features**: Copy code, reading progress, smooth animations  
+✅ **Professional navigation** và footer  
+✅ **Typography** được optimize với Google Fonts  
+
+---
+
+## 🎨 Tính năng UI/UX
+
+### 📱 Responsive Design
+- **Mobile-first approach**: Tối ưu cho điện thoại
+- **Tablet & desktop**: Adaptive layout cho mọi screen size
+- **Touch-friendly**: Buttons và links dễ tap trên mobile
+
+### 🎨 Modern Design System
+- **CSS Variables**: Consistent colors và spacing
+- **Typography**: Google Fonts (Inter + JetBrains Mono)
+- **Animations**: Smooth transitions và hover effects
+- **Cards & Components**: Modern glassmorphism style
+
+### 🌙 Dark Mode
+- **Auto-detection**: Theo system preference
+- **Optimized colors**: Dễ đọc trong mọi lighting condition
+- **Battery-friendly**: OLED-optimized dark theme
+
+### ⚡ Performance Features
+- **Reading progress bar**: Track tiến độ đọc
+- **Copy code buttons**: 1-click copy cho code blocks
+- **Smooth scrolling**: Navigation mượt mà
+- **Lazy loading**: Tối ưu loading speed
 
 ---
 
