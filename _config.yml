@@ -1,0 +1,53 @@
+# Jekyll config for GitHub Pages
+title: "Lộ trình học TypeScript cho người biết Python"
+description: "41 chủ đề học TypeScript có cấu trúc, mỗi chủ đề 5 phút"
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - index.md
+  - week-1.md
+  - week-2.md
+  - week-3.md
+  - week-4.md
+  - bonus.md
+
+# Exclude files
+exclude:
+  - .github/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Collections
+collections:
+  weeks:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "weeks"
+    values:
+      layout: "page"
