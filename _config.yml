@@ -9,7 +9,7 @@ lang: "vi"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+# theme: minima  # Comment out for custom theme
 
 # GitHub Pages settings
 plugins:
