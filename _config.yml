@@ -1,8 +1,10 @@
 # Jekyll config for GitHub Pages
 title: "Lộ trình học TypeScript cho người biết Python"
-description: "41 chủ đề học TypeScript có cấu trúc, mỗi chủ đề 5 phút"
-url: ""
-baseurl: ""
+description: "41 chủ đề học TypeScript có cấu trúc, mỗi chủ đề 5 phút. Dành cho Python developers muốn học TypeScript hiệu quả"
+url: "https://nguyenngocbinh.github.io"
+baseurl: "/typescript-roadmap"
+author: "Nguyen Ngoc Binh"
+lang: "vi"
 
 # Build settings
 markdown: kramdown
@@ -14,6 +16,28 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
+
+# Syntax highlighting
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+
+# SEO settings
+google_analytics: # Add your GA tracking ID here
+google_site_verification: # Add your GSV code here
+
+# Social media
+twitter:
+  username: # Add Twitter username
+  card: summary_large_image
+
+facebook:
+  app_id: # Add Facebook App ID
+  publisher: # Add Facebook Page URL
 
 # Navigation
 header_pages:
@@ -28,10 +52,20 @@ header_pages:
 exclude:
   - .github/
   - README.md
+  - DEPLOYMENT.md
+  - SETUP_COMPLETE.md
   - Gemfile
   - Gemfile.lock
   - node_modules/
   - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Include files
+include:
+  - _pages
+  - assets
 
 # Collections
 collections:
@@ -45,9 +79,23 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "page"
+      layout: "default"
+      author: "Nguyen Ngoc Binh"
   - scope:
       path: ""
-      type: "weeks"
+      type: "weeks"  
     values:
-      layout: "page"
+      layout: "default"
+      author: "Nguyen Ngoc Binh"
+
+# Compression
+sass:
+  style: compressed
+
+# Performance
+incremental: true
+livereload: true
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"

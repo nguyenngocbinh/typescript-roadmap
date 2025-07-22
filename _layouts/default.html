@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/preview.png' | absolute_url }}">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  
+  <!-- Keywords -->
+  <meta name="keywords" content="TypeScript, JavaScript, Python, Programming, Tutorial, Learning, Roadmap">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  
+  <!-- Theme color -->
+  <meta name="theme-color" content="#2563eb">
+  
+  <!-- Progressive Web App -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}" class="site-title">
+        📘 TypeScript Roadmap
+      </a>
+      
+      <div class="nav-links">
+        <a href="{{ '/week-1' | relative_url }}" class="nav-link">Tuần 1</a>
+        <a href="{{ '/week-2' | relative_url }}" class="nav-link">Tuần 2</a>
+        <a href="{{ '/week-3' | relative_url }}" class="nav-link">Tuần 3</a>
+        <a href="{{ '/week-4' | relative_url }}" class="nav-link">Tuần 4</a>
+        <a href="{{ '/bonus' | relative_url }}" class="nav-link">Bonus</a>
+      </div>
+      
+      <div class="nav-actions">
+        <a href="https://github.com/nguyenngocbinh/typescript-roadmap" 
+           class="btn btn-secondary" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          ⭐ GitHub
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content fade-in">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>📘 TypeScript Roadmap</h3>
+        <p>Lộ trình học TypeScript cho người biết Python</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Trang chủ</a></li>
+          <li><a href="{{ '/week-1' | relative_url }}">Tuần 1: Cơ bản</a></li>
+          <li><a href="{{ '/week-2' | relative_url }}">Tuần 2: Thực hành</a></li>
+          <li><a href="{{ '/week-3' | relative_url }}">Tuần 3: Nâng cao</a></li>
+          <li><a href="{{ '/week-4' | relative_url }}">Tuần 4: Ứng dụng</a></li>
+          <li><a href="{{ '/bonus' | relative_url }}">Bonus</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.typescriptlang.org/play" target="_blank">TypeScript Playground</a></li>
+          <li><a href="https://www.typescriptlang.org/docs/" target="_blank">Official Docs</a></li>
+          <li><a href="https://github.com/type-challenges/type-challenges" target="_blank">Type Challenges</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://github.com/nguyenngocbinh/typescript-roadmap" target="_blank">GitHub Repository</a></li>
+          <li><a href="https://github.com/nguyenngocbinh" target="_blank">Author Profile</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 TypeScript Roadmap. Created with ❤️ for Python developers learning TypeScript.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for enhanced functionality -->
+  <script>
+    // Progressive enhancement
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      
+      // Add copy code functionality
+      document.querySelectorAll('pre code').forEach(block => {
+        const button = document.createElement('button');
+        button.className = 'copy-btn';
+        button.textContent = 'Copy';
+        button.addEventListener('click', () => {
+          navigator.clipboard.writeText(block.textContent).then(() => {
+            button.textContent = 'Copied!';
+            setTimeout(() => button.textContent = 'Copy', 2000);
+          });
+        });
+        
+        const wrapper = document.createElement('div');
+        wrapper.className = 'code-wrapper';
+        block.parentNode.insertBefore(wrapper, block);
+        wrapper.appendChild(block);
+        wrapper.appendChild(button);
+      });
+      
+      // Add reading progress bar
+      const progressBar = document.createElement('div');
+      progressBar.className = 'reading-progress';
+      document.body.appendChild(progressBar);
+      
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrolled / total) * 100;
+        progressBar.style.width = progress + '%';
+      });
+    });
+  </script>
+</body>
+</html>

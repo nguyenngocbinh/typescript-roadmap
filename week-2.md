@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Tuần 2: Làm việc với project thực tế (Node.js / Deno)"
+description: "8 chủ đề thực hành TypeScript - Module system, async/await, file operations, REST API"
+---
+
 # 🗓️ Tuần 2: Làm việc với project thực tế (Node.js / Deno)
 
 Tuần này chúng ta sẽ học cách áp dụng TypeScript vào các project thực tế, từ module system đến việc xây dựng REST API đơn giản.

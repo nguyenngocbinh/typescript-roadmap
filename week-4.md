@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Tuần 4: Ứng dụng TypeScript trong Frontend / AI"
+description: "9 chủ đề ứng dụng TypeScript - React, hooks, AI integration, chatbot, image processing"
+---
+
 # 🗓️ Tuần 4: Ứng dụng TypeScript trong Frontend / AI
 
 Tuần cuối cùng! Chúng ta sẽ áp dụng tất cả kiến thức TypeScript đã học vào việc xây dựng ứng dụng React và tích hợp với AI APIs. Đây là phần thực hành nhiều nhất.

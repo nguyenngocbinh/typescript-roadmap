@@ -1,3 +1,9 @@
+---
+layout: default
+title: "BONUS – Chủ đề mở rộng"
+description: "5 chủ đề nâng cao - Testing, linting, error handling, case study, type challenges"
+---
+
 # 🧰 BONUS – Chủ đề mở rộng
 
 Chúc mừng bạn đã hoàn thành 4 tuần cơ bản! Phần bonus này sẽ giúp bạn trở thành TypeScript developer hoàn thiện với các kỹ năng cần thiết trong môi trường production.

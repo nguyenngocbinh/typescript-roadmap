@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Tuần 3: Type nâng cao – Lập trình mạnh mẽ hơn"
+description: "9 chủ đề nâng cao về TypeScript - Generic, utility types, mapped types, conditional types"
+---
+
 # 🗓️ Tuần 3: Type nâng cao – Lập trình mạnh mẽ hơn
 
 Tuần này chúng ta sẽ khám phá sức mạnh thực sự của TypeScript system - từ Generic đến Conditional Types. Đây là những tính năng giúp TS vượt trội so với Python typing.

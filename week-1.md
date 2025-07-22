@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Tuần 1: Làm quen với TypeScript & Tư duy kiểu tường minh"
+description: "10 chủ đề cơ bản về TypeScript cho Python developers - Static typing, kiểu dữ liệu, interface, function"
+---
+
 # 🗓️ Tuần 1: Làm quen với TypeScript & Tư duy kiểu tường minh
 
 Chào mừng đến với tuần đầu tiên! Tuần này chúng ta sẽ làm quen với những khái niệm cơ bản nhất của TypeScript, đặc biệt tập trung vào sự khác biệt với Python về quản lý kiểu dữ liệu.

@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Lộ trình học TypeScript cho người biết Python"
+description: "41 chủ đề học TypeScript có cấu trúc, mỗi chủ đề 5 phút. Dành cho Python developers"
+---
+
 # 📘 Lộ trình học TypeScript cho người biết Python
 
 ## 📖 Giới thiệu
@@ -23,38 +29,91 @@ Nếu bạn đã có nền tảng Python – một ngôn ngữ phổ biến tron
 
 ## 📅 Tổng quan lộ trình
 
-**Tổng cộng**: 41 chủ đề, chia theo tuần. Mỗi chủ đề mất khoảng 5 phút để học.
+<div class="highlight-box">
+<strong>Tổng cộng</strong>: 41 chủ đề, chia theo tuần. Mỗi chủ đề mất khoảng 5 phút để học.
+</div>
 
-### 🗓️ [Tuần 1: Làm quen với TypeScript & Tư duy kiểu tường minh](./week-1.md)
-**10 chủ đề cơ bản** - Từ static typing đến function overloading
+<div class="week-nav">
+  <a href="./week-1.md" class="week-card">
+    <h3>🗓️ Tuần 1: Cơ bản</h3>
+    <p><span class="difficulty-badge difficulty-beginner">Beginner</span></p>
+    <p>10 chủ đề cơ bản - Từ static typing đến function overloading</p>
+  </a>
+  
+  <a href="./week-2.md" class="week-card">
+    <h3>🗓️ Tuần 2: Thực hành</h3>
+    <p><span class="difficulty-badge difficulty-beginner">Beginner</span></p>
+    <p>8 chủ đề thực hành - Module system, async/await, REST API</p>
+  </a>
+  
+  <a href="./week-3.md" class="week-card">
+    <h3>🗓️ Tuần 3: Nâng cao</h3>
+    <p><span class="difficulty-badge difficulty-intermediate">Intermediate</span></p>
+    <p>9 chủ đề nâng cao - Generic, utility types, mapped types</p>
+  </a>
+  
+  <a href="./week-4.md" class="week-card">
+    <h3>🗓️ Tuần 4: Ứng dụng</h3>
+    <p><span class="difficulty-badge difficulty-advanced">Advanced</span></p>
+    <p>9 chủ đề ứng dụng - React, hooks, AI API integration</p>
+  </a>
+</div>
 
-### 🗓️ [Tuần 2: Làm việc với project thực tế (Node.js / Deno)](./week-2.md)  
-**8 chủ đề thực hành** - Module system, async/await, REST API
-
-### 🗓️ [Tuần 3: Type nâng cao – Lập trình mạnh mẽ hơn](./week-3.md)
-**9 chủ đề nâng cao** - Generic, utility types, mapped types
-
-### 🗓️ [Tuần 4: Ứng dụng TypeScript trong Frontend / AI](./week-4.md)
-**9 chủ đề ứng dụng** - React, hooks, AI API integration
-
-### 🧰 [BONUS – Chủ đề mở rộng](./bonus.md)
-**5 chủ đề bổ sung** - Testing, linting, error handling
+<div class="card">
+  <h3>🧰 <a href="./bonus.md">BONUS – Chủ đề mở rộng</a></h3>
+  <p><span class="difficulty-badge difficulty-advanced">Advanced</span></p>
+  <p><strong>5 chủ đề bổ sung</strong> - Testing, linting, error handling</p>
+</div>
 
 ---
 
 ## 🎯 Cách học hiệu quả
 
-1. **Mỗi ngày 10-15 phút**: Học 2-3 chủ đề
-2. **Thực hành ngay**: Mở [TypeScript Playground](https://www.typescriptlang.org/play) và thử code
-3. **So sánh với Python**: Mỗi khái niệm đều có so sánh với Python
-4. **Làm bài tập cuối tuần**: Củng cố kiến thức
-5. **Sử dụng AI assistant**: ChatGPT, Copilot để hỗ trợ học
+<div class="topic-grid">
+  <div class="topic-card">
+    <div class="topic-number">1</div>
+    <h4>Mỗi ngày 10-15 phút</h4>
+    <p>Học 2-3 chủ đề</p>
+  </div>
+  
+  <div class="topic-card">
+    <div class="topic-number">2</div>
+    <h4>Thực hành ngay</h4>
+    <p>Mở <a href="https://www.typescriptlang.org/play" target="_blank">TypeScript Playground</a> và thử code</p>
+  </div>
+  
+  <div class="topic-card">
+    <div class="topic-number">3</div>
+    <h4>So sánh với Python</h4>
+    <p>Mỗi khái niệm đều có so sánh với Python</p>
+  </div>
+  
+  <div class="topic-card">
+    <div class="topic-number">4</div>
+    <h4>Làm bài tập cuối tuần</h4>
+    <p>Củng cố kiến thức</p>
+  </div>
+  
+  <div class="topic-card">
+    <div class="topic-number">5</div>
+    <h4>Sử dụng AI assistant</h4>
+    <p>ChatGPT, Copilot để hỗ trợ học</p>
+  </div>
+</div>
 
 ---
 
 ## 🚀 Bắt đầu ngay
 
-👉 **[Tuần 1: Làm quen với TypeScript & Tư duy kiểu tường minh](./week-1.md)**
+<div class="text-center mt-xl">
+  <a href="./week-1.md" class="btn">
+    � Bắt đầu Tuần 1: Làm quen với TypeScript & Tư duy kiểu tường minh
+  </a>
+</div>
+
+<div class="info-box mt-xl">
+  <p><strong>💡 Tip:</strong> Đây là lộ trình tự học, bạn có thể điều chỉnh tốc độ theo khả năng của mình. Quan trọng là thực hành thường xuyên!</p>
+</div>
 
 ---
 
