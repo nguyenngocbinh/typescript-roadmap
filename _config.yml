@@ -9,14 +9,14 @@ lang: "vi"
 # Build settings
 markdown: kramdown
 highlighter: rouge
-# theme: minima  # Comment out for custom theme
+# Use minima theme for GitHub Pages compatibility
+theme: minima
 
 # GitHub Pages settings
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-redirect-from
 
 # Syntax highlighting
 kramdown:
